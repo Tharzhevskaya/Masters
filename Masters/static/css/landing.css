@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* Global Styles */
+a:hover {
+	color: white;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #FFF8F3;
+}
+
+p {
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+#heading1 {
+    font-weight: 500;
+	font-size: 40px;
+    text-align: center;
+}
+
+#heading2 {
+    font-weight: 500;
+	font-size: 24px;
+    text-align: center;
+}
+
+#heading3 {
+    font-weight: 500;
+	font-size: 18px;
+    text-align: center;
+}
+
+#main_description {
+    padding-top: 50px;
+	padding-bottom: 50px;
+    color: #a74300;
+    text-align: center;
+}
+
+#main_description div {
+    width: 23%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: inline-block;
+	line-height: 1.5;
+}
+
+/*header*/
+header {
+	position: fixed;
+	width: 100%;
+	color: white;
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/* Logo placeholder*/
+#logo {
+	float: left;
+	padding-left: calc( 15% + 5px );
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 145px;
+	height: 44px;
+	background-color: #FF6600;
+}
+/* div for Links in header */
+#headerLinks {
+	float: left;
+	width: calc( 70% - 150px );
+	height: 38px;
+	padding-top: 22px;
+	text-align: right;
+	padding-right: 15%;
+	background-color: #FF6600;
+}
+/* Links in header */
+#headerLinks a {
+	text-decoration: none;
+	color: white;
+	padding-left: 66px;
+	font-size: 15px;
+}
+/* Banner */
+#sexy {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-image: url(/static/img/sexy3.jpg);
+	background-size: 100%;
+	background-color: black;
+	color: #929292;
+    padding-top: calc( 30% + 150px );
+	padding-bottom: calc( 20% - 150px );
+}
+/* Sponsors */
+#sponsors {
+	clear: both;
+	overflow: auto;
+	background-color: #FFC39A;
+	color: white;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	text-align: center;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 1%;
+}
+/* Links in sponsors */
+#sponsors a {
+	padding-left: 3%;
+	padding-right: 3%;
+	text-decoration: none;
+	text-align: center;
+}
+
+/* Whole page content */
+#mainWrapper {
+	width: 70%;
+	padding-right: 15%;
+	padding-left: 15%;
+}
+
+/* footer */
+footer {
+	clear: both;
+	overflow: auto;
+	background-color: #FFC39A;
+	color: white;
+	padding-top: 20px;
+	text-align: center;
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	padding-left: 3%;
+	padding-right: 3%;
+	text-decoration: none;
+	text-align: center;
+}
+footer #tools {
+	height: 50px;
+	background-color: #FFC39A;
+	background-image:url(/static/img/tools.png);
+}
+
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+/* search field in sidebar */
+#content .sidebar #search {
+	display: none;
+}
+/* sidebar */
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-left: 12%;
+	padding-top: 0px;
+}
+/* horizontal separators in sidebar */
+#content .sidebar hr {
+	display: none;
+}
+/*The sidebar and maincontent of page */
+#content {
+	position: relative;
+	top: -22px;
+	width: 100%;
+	overflow: hidden;
+}
+/*menu headings in sidebar */
+#menubar .menu h1 {
+	display: inline;
+	font-size: medium;
+	padding-right: 6%;
+}
+/* Unordered List of links */
+#menubar .menu ul {
+	display: inline;
+}
+/*list elements */
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	padding-left: 0%;
+	padding-right: 3%;
+}
+/*The link to be hidden in tablet view */
+.sidebar #menubar .menu ul .notimp {
+	display: none;
+}
+/* menus in sidebar */
+.sidebar #menubar .menu {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+/*menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+/* offer banners content */
+#mainWrapper #offer p {
+	font-size: small;
+}
+/* main content region of page */
+#mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+/* Prices of products in catalog view */
+.productRow .productInfo .price {
+	font-size: 19px;
+}
+/* Content holders in catalog view */
+.productRow .productInfo .productContent {
+	font-size: 16px;
+}
+/* Buy buttons in catalog view */
+.productRow .productInfo .buyButton {
+	font-size: 15px;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	float: none;
+	width: 100%;
+	position: relative;
+	top: 17px;
+	clear: both;
+	text-align: center;
+	left: 0%;
+	padding-bottom: 19px;
+}
+/* Container for each footer divisions */
+#mainWrapper footer div {
+	width: 44%;
+	text-align: justify;
+	font-size: 15px;
+}
+/* Links in footer */
+.footerlinks p a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline;
+	padding-right: 35px;
+}
+/* Footer region */
+#mainWrapper footer {
+	padding-left: 16px;
+	overflow: hidden;
+}
+/* Links in header */
+header #headerLinks a {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/* Offer- Text banner */
+#mainWrapper #offer {
+	padding-left: 22%;
+}
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+}
+}
+
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+/*Container for links in header */
+#mainWrapper header #headerLinks {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(190,190,190,1.00);
+	padding-bottom: 21px;
+}
+/* Logo placeholder*/
+#mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+/* Links in header */
+header #headerLinks a {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+/*Offer - Text Banner */
+#mainWrapper #offer {
+	padding-left: 0px;
+	text-align: center;
+}
+/* Menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -8%;
+	text-align: center;
+}
+/*Menu headings in sidebar */
+#menubar .menu h1 {
+	width: 100%;
+	display: block;
+}
+/* Each product in catalog view */
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+#mainWrapper footer div {
+	width: 100%;
+	margin-left: -16px;
+	text-align: justify;
+	padding-bottom: 16px;
+	overflow: auto;
+}
+/* Unordered list for menu elements */
+.menu ul {
+	position: relative;
+	padding-left: 24%;
+}
+/* Container for links in footer */
+#mainWrapper footer .footerlinks {
+	padding-left: 8%;
+}
+
+
+/* Main content which excludes the sidebar */
+#mainwrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}
+
+}
