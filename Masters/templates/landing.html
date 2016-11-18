@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/lib/bootstrap/css/bootstrap.min.css">
+    <script src="../static/lib/jquery/js/jquery.min.js"></script>
+    <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
 Landing is coming.
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal" id="loginButton">
+        Войти
+    </button>
+    {% include "loginpopup.html" with modal_name="loginModal" %}
 </body>
 </html>
