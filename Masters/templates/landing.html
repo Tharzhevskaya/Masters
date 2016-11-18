@@ -1,18 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../static/lib/bootstrap/css/bootstrap.min.css">
-    <script src="../static/lib/jquery/js/jquery.min.js"></script>
-    <script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+
+<meta charset="utf-8">
+
+<title>Masters - скорая помощь в твоей общаге</title>
+
+<link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+<link href="../static/css/landing.css" rel="stylesheet" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/lib/bootstrap/css/bootstrap.min.css">
+<script src="../static/lib/jquery/js/jquery.min.js"></script>
+<script src="../static/lib/bootstrap/js/bootstrap.min.js"></script>
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+
 </head>
+
+
+
 <body>
-Landing is coming.
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal" id="loginButton">
-        Войти
-    </button>
-    {% include "loginpopup.html" with modal_name="loginModal" %}
+  <header> 
+
+    <!-- This is the header content. It contains Logo and links -->
+
+    <div id="logo"><a href="#"><img src="/static/img/headlogo.png" width="145" alt="sample logo"></a></div>
+
+    <div id="headerLinks"><a href="#" title="Login/Register" id="loginLink">Вход</a><a href="#" title="WTF">Регистрация</a></div>
+    <script>
+    $("#loginLink").click(function(event) {
+      event.preventDefault();
+      $( "#loginModal" ).modal();
+    });
+    </script>
+  </header>
+  
+<section id="sexy">
+    
+        <!-- The offer section displays a banner text for promotions -->
+    
+        <center><h2>SEXY MEN</h2></center>
+    
+        <p align="center">Кнопка "Вызвать!"</p>
+    
+    </section>
+
+<div id="sponsors">
+<h4>Наши спонсоры</h4>
+  <a href="http://mipt.ru" title="Сайт МФТИ"><img src="/static/img/sponsors/logo_mipt.png" height="60"></a>
+  <a href="#" title="Группа Студсовета ВКонтакте"><img src="/static/img/sponsors/logo_studsovet.png" height="60"></a>
+</div>
+
+<div id="mainWrapper">
+
+    <div id="main_description">
+        <p id="heading1">Они не оставят тебя в беде</p>
+        <p id="heading3">Masters - это абсолютно новый взгляд на взаимодействие студентов
+            с техническим обслуживанием общежитий<br><br><br> </p>
+        <div>
+            <img src="/static/img/desc1.png" width="30%"><br>
+            <p id="heading2">Быстро</p>
+            <p>Оставь заявку на сайте - Мастер рассмотрит ее и прибудет в течение 1 суток</p>
+        </div>
+        <div>
+            <img src="/static/img/desc2.png" width="30%"><br>
+            <p id="heading2">Качественно</p>
+            <p>К твоим услугам лучшие Мастера студгородка МФТИ и гарантия качества работ</p>
+        </div>
+        <div>
+            <img src="/static/img/desc3.png" width="30%"><br>
+            <p id="heading2">Легко</p>
+            <p>Теперь тебе никуда не нужно идти - заявка подается всего в 2 клика</p>
+        </div>
+
+    </div>
+
+    <p>Много контента<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.
+        <br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.</p>
+
+  <div></div>
+</div>
+
+<footer> 
+
+    <div>
+      <a href="#" title="Мы ВКонтакте"><img src="/static/img/socials/vk.png"></a>
+      <a href="#" title="Мы в Google+"><img src="/static/img/socials/google-plus.png"></a>
+      <a href="#" title="Мы в Facebook"><img src="/static/img/socials/facebook.png"></a>
+      <a href="#" title="Мы в LinkedIn"><img src="/static/img/socials/linkedin.png"></a>
+
+      <p>Copytight © 2016 Masters. Мы работаем за еду. 16+</p>
+	
+    <div id="tools"></div>
+
+    </div>
+
+
+  </footer>
+
+{% include "loginpopup.html" with modal_name="loginModal" %}
+
 </body>
 </html>
+
