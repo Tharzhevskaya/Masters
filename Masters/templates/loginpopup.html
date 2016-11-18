@@ -1,0 +1,38 @@
+{% csrf_token %}
+<script src="../static/lib/js/login.js"></script>
+<div class="container">
+    <div class="modal fade" id={{modal_name}} tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="loginModalLabel">Вход в систему</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="user-email">Электронная почта</label>
+                            <input type="email" class="form-control" id="user-email" placeholder="Электронная почта">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-password">Пароль</label>
+                            <input type="password" class="form-control" id="user-password" placeholder="Пароль">
+                        </div>
+                    </form>
+                    <p class="text-danger" id="auth-status"></p>
+                    <button type="button" class="btn btn-primary" onclick="sendLoginData('/accounts')">Войти</button>
+                    <button type="button" id="pwd-show" onclick="$('#pwd-form').toggle();">Забыли пароль?</button>
+                    <div id="pwd-form" style="display: none">
+                        <form>
+                            <div class="form-group">
+                                <label for="pwd-email">Электронная почта</label>
+                                <input type="email" class="form-control" id="pwd-email" placeholder="Электронная почта">
+                            </div>
+                        </form>
+                        <button type="submit" id="restore-btn" onclick="restorePassword('/accounts/restore')">Восстановить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
